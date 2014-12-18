@@ -1,0 +1,10 @@
+<form novalidate class="form-group">    
+  <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>    
+  <label>Email Address</label>
+  <input type="text" ng-model="emailAddr" class="form-control">
+  <label>Password</label>
+  <input type="password" ng-model="password" class="form-control">
+  <input type="checkbox" ng-model="remember" class="form-control" value="1"><label>Remember Me</label>
+  <p></p>
+  <p><br/><button class="btn btn-primary" ng-click="doLogin()">Login</button></p>                
+</form>

@@ -1,0 +1,15 @@
+<script type="text/javascript">
+  'use strict';
+  var sampleApp = angular.module('sampleApp');
+  sampleApp.factory('apiRoots', 
+    function ($http) {
+      var sampleRemoteApi = function() {      
+        return 'http://localhost:3000'
+      };
+
+      return {
+        sampleRemoteApi: sampleRemoteApi
+      };
+    }
+  );
+</script>
